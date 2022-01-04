@@ -57,7 +57,9 @@ main .box{
   color: white;
   background: pink;
   
+  cursor: pointer;
 }
+
 
 main .box .lines{
   display: flex;
@@ -78,6 +80,7 @@ main .box .lines::before{
   width:350px;
   transform: rotate(45deg);
   transform-origin: 0% 0%;
+  transition: opacity 0.7s
 }
 
 main .box .lines::after{
@@ -90,15 +93,24 @@ main .box .lines::after{
   width:350px;
   transform: rotate(135deg);
   transform-origin: 0% 0%;
+  transition: opacity 0.7s
 }
 
+main .box .lines:hover::before,
+main .box .lines:hover::after{
+  opacity: 0;
+}
 
 main .box .lines p{
   text-transform: uppercase;
   font-weight: bold;
   z-index: 1;
+  transition: transform 0.5s;
 }
-  
+
+main .box .lines p:hover{
+  transform: scale(2);
+}
 
 /* box-1 */
 main .box:nth-of-type(1){
@@ -114,8 +126,12 @@ main .box:nth-of-type(1)::before{
   border-radius: 10px;
   background-color: #e88b9b;
   opacity: 0.7;
+  transition: opacity 0.5s
 }
 
+main .box:nth-of-type(1):hover::before{
+  opacity: 0;
+}
 /* box-2 */
 main .box:nth-of-type(2){
   position: relative;
@@ -130,8 +146,11 @@ main .box:nth-of-type(2)::before{
   border-radius: 10px;
   background-color: #79b9df;
   opacity: 0.7;
+  transition: opacity 0.5s
 }
-
+main .box:nth-of-type(2):hover::before{
+  opacity: 0;
+}
 /* box-3 */
 main .box:nth-of-type(3){
   position: relative;
@@ -146,8 +165,11 @@ main .box:nth-of-type(3)::before{
   border-radius: 10px;
   background-color: #5e9a92;
   opacity: 0.7;
+  transition: opacity 0.5s
 }
-
+main .box:nth-of-type(3):hover::before{
+  opacity: 0;
+}
 /* box-4 */
 main .box:nth-of-type(4){
   position: relative;
@@ -162,8 +184,11 @@ main .box:nth-of-type(4)::before{
   border-radius: 10px;
   background-color: #c6768f;
   opacity: 0.7;
+  transition: opacity 0.5s
 }
-
+main .box:nth-of-type(4):hover::before{
+  opacity: 0;
+}
 /* box-5 */
 main .box:nth-of-type(5){
   position: relative;
@@ -178,8 +203,11 @@ main .box:nth-of-type(5)::before{
   border-radius: 10px;
   background-color: #baa2d2;
   opacity: 0.7;
+  transition: opacity 0.5s
 }
-
+main .box:nth-of-type(5):hover::before{
+  opacity: 0;
+}
 /* box-6 */
 main .box:nth-of-type(6){
   position: relative;
@@ -194,8 +222,11 @@ main .box:nth-of-type(6)::before{
   border-radius: 10px;
   background-color: #798ac3;
   opacity: 0.7;
+  transition: opacity 0.5s
 }
-
+main .box:nth-of-type(6):hover::before{
+  opacity: 0;
+}
 /* box-7 */
 main .box:nth-of-type(7){
   position: relative;
@@ -210,8 +241,11 @@ main .box:nth-of-type(7)::before{
   border-radius: 10px;
   background-color: #81b2cc;
   opacity: 0.7;
+  transition: opacity 0.5s
 }
-
+main .box:nth-of-type(7):hover::before{
+  opacity: 0;
+}
 /* box-8 */
 main .box:nth-of-type(8){
   position: relative;
@@ -226,8 +260,11 @@ main .box:nth-of-type(8)::before{
   border-radius: 10px;
   background-color: #609599;
   opacity: 0.7;
+  transition: opacity 0.5s
 }
-
+main .box:nth-of-type(8):hover::before{
+  opacity: 0;
+}
 /* box-9 */
 main .box:nth-of-type(9){
   position: relative;
@@ -242,8 +279,11 @@ main .box:nth-of-type(9)::before{
   border-radius: 10px;
   background-color: #5e9a92;
   opacity: 0.7;
+  transition: opacity 0.5s
 }
-
+main .box:nth-of-type(9):hover::before{
+  opacity: 0;
+}
 /* box-10 */
 main .box:nth-of-type(10){
   position: relative;
@@ -258,8 +298,11 @@ main .box:nth-of-type(10)::before{
   border-radius: 10px;
   background-color: #886d99;
   opacity: 0.7;
+  transition: opacity 0.5s
 }
-
+main .box:nth-of-type(10):hover::before{
+  opacity: 0;
+}
 /* box-11 */
 main .box:nth-of-type(11){
   position: relative;
@@ -274,8 +317,11 @@ main .box:nth-of-type(11)::before{
   border-radius: 10px;
   background-color: #5f74a4;
   opacity: 0.7;
+  transition: opacity 0.5s
 }
-
+main .box:nth-of-type(11):hover::before{
+  opacity: 0;
+}
 /* box-12 */
 main .box:nth-of-type(12){
   position: relative;
@@ -290,8 +336,11 @@ main .box:nth-of-type(12)::before{
   border-radius: 10px;
   background-color: #b776a3;
   opacity: 0.7;
+  transition: opacity 0.5s
 }
-
+main .box:nth-of-type(12):hover::before{
+  opacity: 0;
+}
 
 
 /* footer */
@@ -323,8 +372,11 @@ footer{
     height: 15px;
     padding: 10px;
     border-radius: 5px;
+    transition: transform 0.5s;
 }
-
+.follow ul i:hover{
+  transform: scale(1.2);
+}
 .getintouch {
   padding-top: 50px;
   padding-right: 40px;
@@ -348,15 +400,21 @@ footer{
     margin-bottom: 10px;
 }
 
-.getintouch button{
+.getintouch form button{
   width: 100%;
   background-color: #646464;
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px;
+  margin-top: 20px;
   font-weight: bold;
   letter-spacing: 3px;
+  transition: transform 0.5s;
+}
+
+.getintouch button:hover{
+  transform: scale(0.9);
 }
 
 .getintouch p{
@@ -441,7 +499,12 @@ footer{
   }
 
   footer .getintouch button{
-    width: 20%;
+    margin-top: 0%;
+    width: 40%;
+    transition: transform 0.5s;
+  }
+  footer .getintouch button:hover{
+    transform: scale(1.2)
   }
 }
 
